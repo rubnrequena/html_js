@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Ejemplo de Caja de Texto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <input
+      type="text"
+      id="cajaTexto"
+      value="Te reto a cambiar el texto y hacer click!"
+    />
+    <button type="button" onclick="alertaTexto()">Click Me!</button>
+    <script>
+      function alertaTexto() {
+        // Este código obtiene el valor del input "cajaTexto" y lo almacena en la variable "textoDeLaCaja".
+        // Luego, muestra un alert con el valor de la variable.
+        const textoDeLaCaja = document.getElementById("cajaTexto").value;
+        alert(textoDeLaCaja);
+      }
+    </script>
+  </body>
+</html>

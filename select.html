@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Ejemplo de Seleccion</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <select id="temperatura">
+      <option value="centigrados">Centigrados</option>
+      <option value="farenheit">Farenheit</option>
+    </select>
+    <button type="button" onclick="alertaTexto()">Click Me!</button>
+    <p id="respuesta"></p>
+    <script>
+      function alertaTexto() {
+        // Este código obtiene el valor del input "cajaTexto" y lo almacena en la variable "textoDeLaCaja".
+        // Luego, muestra un alert con el valor de la variable.
+        const textoDeLaCaja = document.getElementById("temperatura").value;
+        const parrafo = document.getElementById("respuesta");
+        if (textoDeLaCaja === "centigrados") {
+          parrafo.innerHTML = "La temperatura es de 20 grados centigrados";
+        } else {
+          parrafo.innerHTML = "La temperatura es de 68 grados farenheit";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Ejemplo de boton</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <label>Incrustado en el html</label>
+    <button
+      type="button"
+      onclick="alert('Hola mundo, este es Js incrustado en el HTML!')"
+    >
+      Click Me!
+    </button>
+    <hr />
+    <label>Desde la etiqueta script</label>
+    <button type="button" onclick="miPrimerFuncion()">Click Me!</button>
+    <script>
+      function miPrimerFuncion() {
+        alert("Hola mundo! Te saludo desde la etiqueta script.");
+      }
+    </script>
+  </body>
+</html>
